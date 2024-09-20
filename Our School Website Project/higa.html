@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higa Model Boarding School</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="jquery.js">
+
+</head>
+<body>
+    <!--header starts-->
+    <header>
+        <div class="logo">
+            <h2>HIGA<br>MODEL<br><span>BOARDING<br>SCHOOL</span></h2></div>
+        <div class="img"><img src="logo.png" alt="higa logo"></div> 
+        
+        
+        <div class="navbar">
+            <nav>
+                <ul class="primary-nav">
+                    <li><a href="higa.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="adimission.html">ADIMISSION</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <a href="#"><li class="fa fa-search"></li></a>
+                    <li class="login" id="login">login</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="fa fa-bars" id="menu">
+        </div> 
+         
+    </header><!--header ends-->
+<!--section 1 starts-->
+ <div class="login-form">
+    <form action="">
+        <h3>login</h3>
+        <input type="email" placeholder="username" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fa fa-times"></i>
+    </form>
+    </div>
+ </div>
+    <section class="container">
+        <div>
+            <h6>HIGA MODEL BOARDING SCHOOL</h6>
+            <h1>HIGA <br>THE CENTER OF EXCELLENCE</h1>
+            <a href="about.html#excellence">LEARN MORE</a>
+        </div>
+    </section> <!--section 1 ends-->
+    <!--section 2 starts-->
+    <section>
+        <div class="about">
+        <h5>WHY CHOOSE US?</h5>
+        <p>Welcome to our school website, the digital home of one of the best schools in the region! We are proud to offer an outstanding educational experience to our students, and we are excited to share with you all the amazing opportunities and resources available at our school.
+           At our school, we believe that education is the foundation of success, and we strive to provide our students with a challenging, yet supportive environment that fosters their intellectual, social, and emotional growth. We have a team of dedicated and passionate educators who are committed to ensuring that every student receives an exceptional education that prepares them for a bright future.
+           Our curriculum is designed to meet the needs of a diverse student body and is aligned with the latest research in education. We offer a wide range of academic programs, including Advanced Placement courses, honors classes, and specialized programs for students with unique talents and interests. Our students have access to state-of-the-art technology and resources, including a fully-equipped library, modern computer labs, and cutting-edge science and technology facilities.
+           <br><br><br>In addition to our rigorous academic program, we offer a range of extracurricular activities that allow our students to explore their interests and develop new skills. From sports teams and music ensembles to clubs and organizations, our students have many opportunities to get involved and make the most of their high school experience.
+           At our school, we believe that a strong partnership between the school, the family, and the community is essential for student success. We work closely with parents and guardians to ensure that every student receives the support they need to achieve their goals, and we actively seek input and feedback from our community to ensure that we are meeting the needs of our students.
+           We are confident that our website will provide you with valuable information about our school and the many opportunities available to our students. Please take a moment to explore our site and learn more about what makes our school one of the best in the region. Thank you for your interest in our school, and we look forward to working with you and your family.
+        </p>
+        <a href="academics.html">LEARN MORE</a>
+        </div>
+    </section><!--section 2 ends-->
+     <!--section 3 starts--> 
+    <section class="testimonials">
+        <h6>TESTIMONIALS</h6>
+      <div class="slideshow">
+            <div class="blockquote">
+              <blockquote>"My experience at this school has been nothing short of amazing. From the dedicated and passionate teachers to the welcoming and inclusive student body, I have felt supported and encouraged to be my best self. The school's commitment to academic excellence has provided me with a solid foundation for success, and the wide range of extracurricular activities has allowed me to explore my interests and develop new skills. I am grateful for the opportunities and experiences that this school has provided me and would highly recommend it to anyone looking for a top-notch education." </blockquote>
+              <cite class="author">- Bemnet Eshetu, Class of 2023</cite>
+            </div>
+            <div class="blockquote">
+              <blockquote>"As a parent, I couldn't be happier with my child's experience at this school. The faculty and staff are truly committed to the success of their students and have provided my child with a challenging and supportive environment that has allowed them to thrive academically and personally. The school's emphasis on character education has instilled important values in my child, and the range of extracurricular activities has allowed them to explore their interests and develop new skills. I highly recommend this school to any parent looking for an exceptional education for their child." </blockquote>
+            <cite class="author">- Chakebo Lefebo, parent</cite>
+            </div>
+            <div class="blockquote">
+              <blockquote>"I graduated from this school a few years ago, and I can honestly say that it prepared me well for college and beyond. The rigorous academic program challenged me to think critically and develop strong study skills, while the extracurricular activities provided me with valuable leadership experience and helped me to discover my passions. The school's emphasis on community service and giving back has also instilled important values in me that I continue to carry with me today. I am proud to be an alum of this school and highly recommend it to anyone looking for a top-notch education." </blockquote>
+              <cite class="author">- Amanuel Tsegaye, Class of 2021</cite>
+            </div>
+            <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+    </section> <!--section 3 ends-->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("blockquote");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+</script>
+ <!--section 4 starts-->
+    <section class="news">
+        <h2>WHAT'S UP?</h2>
+    <div class="expand">
+    <div class="community">
+        <img src="graduation.jpg" alt="" id="img"><br>
+        <a href="https://youtu.be/WJ1dngMtxvI">Community notices,</a><br>
+        <a href="https://youtu.be/WJ1dngMtxvI">Cultural and community <br>events,</a>
+    </div>
+    <div class="school">
+         <img src="meet.jpg" alt="" id="img"><br>
+        <a href="#">This week in the school,</a><br>
+        <a href="#">Exam and course schedules,</a><br>
+        <a href="#">Adiminstration notices,</a>
+    </div>
+    <div class="student">
+        <img src="work.jpg" alt=""><br>
+        <a href="#">Students' blog,</a><br>
+        <a href="#">Entertainment,</a>
+    </div>
+    </div>
+    </section><!--section 4 ends-->
+    <!--section 5 starts-->
+    <section class="contact-info">
+        <div class="locals">
+            <h3  id="contact">Contact us</h3>
+            <a href="mailto:higa@gmail.com">higa@gmail.com</a>
+            <a href="tel:+25146 334 444">+25146 334 444</a>           
+        </div>
+        <div class="socials">
+            <h3>You can also find us on</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://t.me/HMBSinfo" class="fa fa-telegram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+        </div>
+        <div class="qlink">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="higa.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="alumini.html">Alumni</a></li>
+            </ul>
+        </div>
+        <div class="address">
+           <h3>Address</h3>
+           <p>Durame, Ethiopia</p>
+        </div>
+        <div class="copyright">
+            <h6>&copy; HIGA MODEL BOARDING SCHOOL 2023 | Website by GROUP 1</h6>
+        </div>
+    </section>
+<!--section 5 ends-->
+<!-- jquery link  -->
+<script src="jquery.js"></script>
+<!-- custom js file link  -->
+<script src="script.js"></script>
+</body>
+</html>
